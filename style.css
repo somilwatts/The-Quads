@@ -1,0 +1,136 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+}
+
+header {
+    background-color: #00b624;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    width: 80%;
+}
+
+.full-screen-image {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.game-section {
+    background-color: #fff;
+    border: 2px solid #03b600;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    margin: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Styling for the level display */
+#levelDisplay {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Buttons for quiz selection and answer options */
+button {
+    background-color: #00b627;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00730f;
+}
+
+/* Quiz content styling */
+#quizContent {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+#quizContent button {
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+}
+
+/* Back button and next quiz button styling */
+#backButton, #nextQuizButton {
+    background-color: #00d81d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#backButton:hover, #nextQuizButton:hover {
+    background-color: #0ac700;
+}
+
+/* Leaderboard section */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #00b600;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #00b612;
+    color: white;
+}
+
+td {
+    background-color: #caf0f8;
+    font-size: 1rem;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    background-color: #00b62a;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}

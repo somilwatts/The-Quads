@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Learning Platform</h1>
+    </header>
+
+    <!-- Page 1: Home Page (Enter Your Name, Class, Age) -->
+    <div id="homePage" class="container">
+        <div class="game-section">
+            <img src="https://img.freepik.com/premium-vector/man-focused-computer-screen-engaged-online-education-business-training-online-education-business-training-concept-distance-courses-simple-minimalist-flat-vector-illustration_538213-55647.jpg?size=626&ext=jpg&ga=GA1.1.259001413.1725741393&semt=ais_hybrid" alt="Educational Image" class="full-screen-image">
+            <h2>Welcome to the Interactive Learning Platform</h2>
+            <label for="playerNameHome">Enter Your Name: </label>
+            <input type="text" id="playerNameHome" placeholder="Player Name">
+            <label for="playerClass">Class: </label>
+            <input type="text" id="playerClass" placeholder="Class">
+            <label for="playerAge">Age: </label>
+            <input type="number" id="playerAge" placeholder="Age">
+            <button onclick="moveToQuizSelection()">Continue</button>
+        </div>
+        <!-- Home Page Footer -->
+        <footer class="home-footer">
+            <p>&copy; 2024 Interactive Learning Platform | All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Page 2: Quiz Selection Page -->
+    <div id="quizSelectionPage" class="container" style="display: none;">
+        <div class="game-section">
+            <h2>Select Your Quiz</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Nr39W8iuhy1jzurkN_oRo5m7Xjgd7RvSuw&s" alt="Quiz Image" class="quiz-image">
+            <button onclick="selectQuiz('English')">English Quiz</button>
+            <button onclick="selectQuiz('Math')">Math Quiz</button>
+            <button onclick="selectQuiz('Science')">Science Quiz</button>
+        </div>
+        <!-- Footer for all pages -->
+        <footer class="page-footer">
+            <p>&copy; 2024 Interactive Learning Platform | All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Page 3: Quiz Page -->
+    <div id="quizPage" class="container" style="display: none;">
+        <div class="game-section">
+            <h2 id="quizTitle">Quiz</h2>
+            <div id="quizContent"></div>
+            <p id="levelDisplay">Level: 1</p> <!-- Show current level -->
+            <!-- Back button -->
+            <button id="backButton" onclick="goBack()">Back to Quiz Selection</button>
+            <!-- Next Quiz button -->
+            <button id="nextQuizButton" onclick="startNextQuiz()" style="display: none;">Take Another Quiz</button>
+        </div>
+        <!-- Footer for all pages -->
+        <footer class="page-footer">
+            <p>&copy; 2024 Interactive Learning Platform | All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Page 4: About Page -->
+    <div id="aboutPage" class="container" style="display: none;">
+        <div class="game-section">
+            <h2>About Us</h2>
+            <p>Our main goal is to increase the knowledge of students through interactive learning and engaging quizzes. We aim to make learning fun and effective by providing quizzes in various subjects that help students enhance their understanding and skills.</p>
+            <button onclick="goToHome()">Go to Home Page</button>
+        </div>
+        <!-- Footer for all pages -->
+        <footer class="page-footer">
+            <p>&copy; 2024 Interactive Learning Platform | All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
