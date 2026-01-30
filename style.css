@@ -4,8 +4,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f8ff;
+    min-height: 100vh;
 }
 
+/* Header */
 header {
     background-color: #00b624;
     color: white;
@@ -18,56 +20,63 @@ header h1 {
     font-size: 2.5rem;
 }
 
+/* MAIN CONTAINER */
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px auto;
-    width: 80%;
+    justify-content: center;
+    margin: 40px auto 100px; /* footer space */
+    width: 100%;
 }
 
+/* IMAGE */
 .full-screen-image {
-    width: 80%;
+    width: 70%;
+    max-width: 500px;
     height: auto;
     margin-bottom: 20px;
 }
 
+/* MAIN WHITE BOX */
 .game-section {
     background-color: #fff;
     border: 2px solid #03b600;
-    border-radius: 10px;
-    padding: 20px;
-    width: 80%;
-    margin: 20px 0;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 30px 25px;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     text-align: center;
 }
 
-/* Styling for the level display */
+/* Level display */
 #levelDisplay {
     font-size: 1.2rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin: 15px 0;
 }
 
-/* Buttons for quiz selection and answer options */
+/* Buttons */
 button {
     background-color: #00b627;
     color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 12px 22px;
+    border-radius: 6px;
     cursor: pointer;
     font-size: 1rem;
-    margin: 10px;
-    transition: background-color 0.3s ease;
+    margin: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
     background-color: #00730f;
+    transform: scale(1.03);
 }
 
-/* Quiz content styling */
+/* Quiz content */
 #quizContent {
     font-size: 1.2rem;
     margin: 20px 0;
@@ -75,28 +84,24 @@ button:hover {
 
 #quizContent button {
     display: block;
-    width: 50%;
+    width: 80%;
+    max-width: 300px;
     margin: 10px auto;
 }
 
-/* Back button and next quiz button styling */
-#backButton, #nextQuizButton {
+/* Back & Next buttons */
+#backButton,
+#nextQuizButton {
     background-color: #00d81d;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
+    margin-top: 15px;
 }
 
-#backButton:hover, #nextQuizButton:hover {
+#backButton:hover,
+#nextQuizButton:hover {
     background-color: #0ac700;
 }
 
-/* Leaderboard section */
+/* Leaderboard */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -116,10 +121,9 @@ th {
 
 td {
     background-color: #caf0f8;
-    font-size: 1rem;
 }
 
-/* Footer styling */
+/* FOOTER */
 footer {
     text-align: center;
     background-color: #00b62a;
@@ -132,5 +136,5 @@ footer {
 
 footer p {
     margin: 0;
-    font-size: 1rem;
+    font-size: 0.95rem;
 }
